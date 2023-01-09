@@ -1,0 +1,94 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    padding: 25px;
+    flex-direction: column;
+}
+.card {
+    background-color:  hsl(213, 19%, 18%);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+}
+h1 ,h2{
+    color: white;
+    font-size: 25px;
+}
+p {
+    color: hsl(217, 12%, 63%);
+}
+.ratingcontainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.rating {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    background-color: hsla(216, 12%, 54%, 0.295);
+
+}
+.rating:hover {
+    background-color:hsla(216, 14%, 58%, 0.726) ;
+    color: white;
+}
+.rating-on{
+    background-color: hsl(25, 97%, 53%);
+}
+.icon {
+    width: 40px;
+    padding: 10px;
+    background-color: hsla(216, 12%, 54%, 0.295);
+    border-radius: 50%;
+}
+button {
+    border: none;
+    padding: 15px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    transition-duration: 0.5s;
+}
+button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+.ty-card {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+.selected {
+    background-color: hsla(216, 14%, 58%, 0.164);
+    color: hsl(25, 97%, 53%);
+    padding: 5px;
+    border-radius: 20px;
+}
+@media only screen and (min-width: 400px) {
+    .card {
+        max-width: 380px;
+    } 
+}
